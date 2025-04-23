@@ -45,7 +45,8 @@ This project is a solution for the Remitly 2025 Internship Task, implementing a 
 
 ```bash
 git clone https://github.com/KacperRebosz/remitly-internship-2025.git
-cd Remitly-2025-Task
+cd remitly-internship-2025
+npm install
 ```
 
 ### Environment Configuration
