@@ -1,0 +1,100 @@
+{
+  "id": "1eb53848-5bf3-48d6-b0fd-36a86a58d03e",
+  "prevId": "00000000-0000-0000-0000-000000000000",
+  "version": "7",
+  "dialect": "postgresql",
+  "tables": {
+    "public.swift_codes": {
+      "name": "swift_codes",
+      "schema": "",
+      "columns": {
+        "country_iso2": {
+          "name": "country_iso2",
+          "type": "varchar(2)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "swift_code": {
+          "name": "swift_code",
+          "type": "varchar(11)",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "code_type": {
+          "name": "code_type",
+          "type": "varchar(5)",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "name": {
+          "name": "name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "address": {
+          "name": "address",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "town_name": {
+          "name": "town_name",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "country_name": {
+          "name": "country_name",
+          "type": "varchar",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "is_headquarter": {
+          "name": "is_headquarter",
+          "type": "boolean",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "time_zone": {
+          "name": "time_zone",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "updated_at": {
+          "name": "updated_at",
+          "type": "timestamp with time zone",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    }
+  },
+  "enums": {},
+  "schemas": {},
+  "sequences": {},
+  "roles": {},
+  "policies": {},
+  "views": {},
+  "_meta": {
+    "columns": {},
+    "schemas": {},
+    "tables": {}
+  }
+}

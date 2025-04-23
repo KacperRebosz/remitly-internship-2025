@@ -1,0 +1,33 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist/scripts",
+    "module": "CommonJS",
+    "target": "ES2016",
+    "rootDir": "src",
+    "isolatedModules": false,
+    "noEmit": false,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "src/db/migrate.ts",
+    "src/scripts/seed.ts",
+    "src/db/index.ts",
+    "src/db/schema.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "src/app.*",
+    "src/main.ts",
+    "src/swift-codes",
+    "src/lib",
+    "test",
+    "dest"
+  ]
+}
